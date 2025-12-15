@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+    <style>
+      .back-btn {
+  background-color: #2b2c30;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #3a3b3f;
+  transform: translateX(-3px);
+}
+
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    
+    <!--
+      - #SIDEBAR
+    -->
+
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+<button onclick="window.history.back()" class="back-btn">
+    ← Back
+  </button>
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">Asset Tagging Portal — Case Study</h2>
+  </header>
+
+  <section class="about-text">
+
+    <h3 class="h3">Project Overview</h3>
+    <p>
+      The Asset Tagging Portal is a large-scale asset management system developed for vendors working
+      with Pepsi Pakistan. The platform enables nationwide tagging, verification, and tracking of
+      company-owned assets — primarily vehicles and beverage coolers — distributed across Pakistan.
+    </p>
+
+    <h3 class="h3">Business Context</h3>
+    <p>
+      Pepsi operates thousands of physical assets deployed with vendors, distributors, and retail
+      partners across multiple cities. Accurate tagging and visibility of these assets is critical
+      for ownership verification, operational audits, and loss prevention.
+    </p>
+
+    <h3 class="h3">Problem</h3>
+    <p>
+      Prior to this system, asset tracking was fragmented and unreliable:
+    </p>
+    <ul>
+      <li>Manual or semi-digital asset records maintained by different vendors</li>
+      <li>No centralized system to verify asset ownership and location</li>
+      <li>Delayed synchronization of field data into the main database</li>
+      <li>Performance issues when handling large volumes of asset data</li>
+      <li>No real-time visibility into tagged vs untagged assets</li>
+    </ul>
+
+    <h3 class="h3">Solution</h3>
+    <p>
+      I helped in developed a centralized Asset Tagging Portal that allows Pepsi vendors to digitally tag,
+      verify, and update asset information in the field. The system was designed to handle
+      high-volume data ingestion using asynchronous processing via Laravel Queues.
+    </p>
+
+    <h3 class="h3">Asset Types Managed</h3>
+    <ul>
+      <li>
+        <b>Vehicles</b> –  
+        Delivery trucks and operational vehicles tagged with unique identifiers and metadata.
+      </li>
+
+      <li>
+        <b>Coolers</b> –  
+        Refrigeration units deployed at retail locations, tracked by serial numbers and location data.
+      </li>
+    </ul>
+
+    <h3 class="h3">Core Modules</h3>
+    <ul>
+      <li>
+        <b>Asset Tagging</b> –  
+        Digital tagging of assets with unique IDs, images, and metadata captured by vendors.
+      </li>
+
+      <li>
+        <b>Vendor Management</b> –  
+        Controlled access for vendors and field teams to tag and manage assigned assets.
+      </li>
+
+      <li>
+        <b>Asset Verification</b> –  
+        Validation workflows to ensure data accuracy and prevent duplicate or invalid entries.
+      </li>
+
+      <li>
+        <b>Bulk Data Processing</b> –  
+        High-volume asset uploads and updates processed asynchronously using Laravel Queues.
+      </li>
+
+      <li>
+        <b>Reporting & Dashboards</b> –  
+        Visibility into total assets, tagged vs untagged counts, regional distribution, and vendor performance.
+      </li>
+    </ul>
+
+    <h3 class="h3">Scalability & Performance</h3>
+    <ul>
+      <li>Processed large-scale asset data across multiple regions in Pakistan</li>
+      <li>Used Laravel Queues to offload heavy operations and avoid request timeouts</li>
+      <li>Ensured reliable background processing for uploads, validations, and sync jobs</li>
+      <li>Designed the system to scale with increasing asset volume and vendor usage</li>
+    </ul>
+
+    <h3 class="h3">Tech Stack</h3>
+    <ul>
+      <li>Laravel (Backend & Queue Processing)</li>
+      <li>MySQL (High-volume relational data storage)</li>
+      <li>Queue Workers (Asynchronous job handling)</li>
+      <li>Bootstrap / Admin UI (Vendor-facing portal)</li>
+    </ul>
+
+    <h3 class="h3">My Responsibilities</h3>
+    <ul>
+      <li>Queue-based processing for large datasets</li>
+      <li>Asset tagging and verification workflows</li>
+      <li>Performance optimization for high-load operations</li>
+      <li>Vendor access control and data integrity enforcement</li>
+    </ul>
+
+    <h3 class="h3">Impact</h3>
+    <ul>
+      <li>Centralized asset visibility across Pakistan</li>
+      <li>Accurate and auditable asset records</li>
+      <li>Improved operational control for Pepsi vendors</li>
+      <li>Eliminated manual reconciliation of asset data</li>
+      <li>Stable performance despite large-scale data volume</li>
+    </ul>
+
+    <h3 class="h3">Conclusion</h3>
+    <p>
+      The Asset Tagging Portal provided Pepsi Pakistan with a reliable, scalable solution to track
+      and manage physical assets nationwide, while enabling vendors to efficiently tag and verify
+      assets without overwhelming the system.
+    </p>
+
+  </section>
+
+</article>
+
+
+
+      
+      
+
+      
+      
+      <!--
+        - #RESUME
+      -->
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->   
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

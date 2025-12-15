@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+    <style>
+      .back-btn {
+  background-color: #2b2c30;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #3a3b3f;
+  transform: translateX(-3px);
+}
+
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    
+    <!--
+      - #SIDEBAR
+    -->
+
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+<button onclick="window.history.back()" class="back-btn">
+    ← Back
+  </button>
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">Offline & Online Vehicle Valuation Survey Application (Flutter) — Case Study</h2>
+  </header>
+
+  <section class="about-text">
+
+    <h3 class="h3">Project Overview</h3>
+    <p>
+      The Vehicle Valuation Survey Application is a Flutter-based mobile solution developed for
+      professional surveyors to conduct vehicle inspections in the field. The application is designed
+      with an offline-first architecture and integrates directly with the company’s ERP system to
+      generate standardized vehicle valuation reports.
+    </p>
+
+    <h3 class="h3">Business Context</h3>
+    <p>
+      Vehicle valuation surveyors often operate in locations with unreliable or no internet connectivity.
+      Despite this limitation, survey data must be captured accurately and synchronized with the ERP
+      system to support reporting, billing, and audit requirements.
+    </p>
+
+    <h3 class="h3">Problem</h3>
+    <p>
+      The existing workflow had multiple operational failures:
+    </p>
+    <ul>
+      <li>Paper-based or partially digital inspection processes</li>
+      <li>Loss of survey data due to poor connectivity</li>
+      <li>Manual data re-entry into ERP systems</li>
+      <li>Delayed valuation report generation</li>
+      <li>Inconsistent survey formats across surveyors</li>
+    </ul>
+
+    <h3 class="h3">Solution</h3>
+    <p>
+      I developed an offline-capable Flutter application that allows surveyors to capture vehicle
+      inspection data, images, and valuation parameters without internet access. Once connectivity
+      is available, the application securely synchronizes the data with the ERP system, triggering
+      automated vehicle valuation report generation.
+    </p>
+
+    <h3 class="h3">Core Features</h3>
+    <ul>
+      <li>
+        <b>Offline Survey Execution</b> –  
+        Complete vehicle valuation surveys offline, including vehicle details, condition checks,
+        damages, accessories, mileage, and remarks.
+      </li>
+
+      <li>
+        <b>Local Data Persistence</b> –  
+        Survey data and images stored locally on the device to prevent data loss.
+      </li>
+
+      <li>
+        <b>Media Capture</b> –  
+        Capture multiple vehicle images with metadata, linked to the survey record.
+      </li>
+
+      <li>
+        <b>Background Synchronization</b> –  
+        Queue-based sync process that uploads pending surveys when connectivity is restored.
+      </li>
+
+      <li>
+        <b>ERP Integration</b> –  
+        API-based integration with the ERP for valuation report generation, approvals, and billing.
+      </li>
+    </ul>
+
+    <h3 class="h3">Offline-First Architecture</h3>
+    <ul>
+      <li>Local database used for storing surveys and images</li>
+      <li>Sync queue to handle pending uploads</li>
+      <li>Retry and failure handling for unstable networks</li>
+      <li>Data integrity checks to prevent duplicate submissions</li>
+    </ul>
+
+    <h3 class="h3">User Roles</h3>
+    <ul>
+      <li><b>Surveyor</b> – Conducts inspections and submits valuation surveys</li>
+      <li><b>Reviewer</b> – Reviews and validates survey data inside ERP</li>
+      <li><b>Admin</b> – Manages users, report templates, and system configurations</li>
+    </ul>
+
+    <h3 class="h3">Tech Stack</h3>
+    <ul>
+      <li>Flutter (Cross-platform mobile application)</li>
+      <li>Laravel (Backend APIs & ERP)</li>
+      <li>MySQL (Centralized ERP database)</li>
+      <li>Local Storage / Offline Database (Mobile)</li>
+    </ul>
+
+    <h3 class="h3">My Responsibilities</h3>
+    <ul>
+      <li>Flutter application architecture and implementation</li>
+      <li>Offline data storage and synchronization logic</li>
+      <li>ERP API integration</li>
+      <li>Vehicle valuation data modeling</li>
+      <li>End-to-end survey-to-report workflow</li>
+    </ul>
+
+    <h3 class="h3">Impact</h3>
+    <ul>
+      <li>Enabled surveyors to work without internet dependency</li>
+      <li>Eliminated data loss during field inspections</li>
+      <li>Reduced valuation report turnaround time</li>
+      <li>Standardized survey data across field teams</li>
+      <li>Improved ERP data accuracy and audit readiness</li>
+    </ul>
+
+    <h3 class="h3">Conclusion</h3>
+    <p>
+      The Flutter-based Offline & Online Vehicle Valuation Survey Application successfully connected
+      field survey operations with enterprise ERP workflows, ensuring reliable data capture, seamless
+      synchronization, and accurate valuation report generation.
+    </p>
+
+  </section>
+
+</article>
+
+
+
+      
+      
+
+      
+      
+      <!--
+        - #RESUME
+      -->
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->   
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

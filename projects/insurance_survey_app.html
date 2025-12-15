@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+    <style>
+      .back-btn {
+  background-color: #2b2c30;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #3a3b3f;
+  transform: translateX(-3px);
+}
+
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    
+    <!--
+      - #SIDEBAR
+    -->
+
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+<button onclick="window.history.back()" class="back-btn">
+    ← Back
+  </button>
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title">Motor Insurance Survey Application (Offline & Online) — Case Study</h2>
+  </header>
+
+  <section class="about-text">
+
+    <h3 class="h3">Project Overview</h3>
+    <p>
+      The Motor Insurance Survey Application is a Flutter-based mobile system developed exclusively
+      for motor insurance surveyors. The application enables field surveyors to conduct vehicle
+      inspections, document damages, and prepare motor survey data in both offline and online
+      environments, with seamless synchronization to the central system.
+    </p>
+
+    <h3 class="h3">Business Context</h3>
+    <p>
+      Motor insurance surveys are often conducted at accident sites, workshops, or remote locations
+      where internet access is unreliable. Survey data must be captured accurately in the field and
+      delivered to the insurance company without delays or data loss.
+    </p>
+
+    <h3 class="h3">Problem</h3>
+    <p>
+      The traditional motor survey process suffered from operational and data integrity issues:
+    </p>
+    <ul>
+      <li>Paper-based or inconsistent digital inspection formats</li>
+      <li>Loss of survey data due to unstable connectivity</li>
+      <li>Delayed submission of motor survey reports</li>
+      <li>Manual re-entry of inspection data into central systems</li>
+      <li>Lack of standardization across surveyors</li>
+    </ul>
+
+    <h3 class="h3">Solution</h3>
+    <p>
+      I developed an offline-first Flutter application that allows motor surveyors to capture
+      complete vehicle inspection data without internet access. The application securely
+      synchronizes survey data and images once connectivity is restored, enabling faster
+      processing of motor insurance claims and reports.
+    </p>
+
+    <h3 class="h3">Core Features</h3>
+    <ul>
+      <li>
+        <b>Offline Motor Survey</b> –  
+        Capture vehicle details, accident information, damage assessment, parts condition,
+        mileage, and remarks without network dependency.
+      </li>
+
+      <li>
+        <b>Damage Documentation</b> –  
+        Structured damage entry with photographic evidence linked to specific vehicle sections.
+      </li>
+
+      <li>
+        <b>Local Data Storage</b> –  
+        All survey data and images are stored locally to prevent data loss during field operations.
+      </li>
+
+      <li>
+        <b>Online Synchronization</b> –  
+        Background synchronization uploads pending surveys when internet becomes available.
+      </li>
+
+      <li>
+        <b>Motor Survey Report Generation</b> –  
+        Submitted data feeds directly into the central system for motor survey report preparation.
+      </li>
+    </ul>
+
+    <h3 class="h3">Offline-First Architecture</h3>
+    <ul>
+      <li>Local database for survey data persistence</li>
+      <li>Queue-based sync mechanism for pending surveys</li>
+      <li>Retry logic for failed uploads</li>
+      <li>Safeguards against duplicate submissions</li>
+    </ul>
+
+    <h3 class="h3">User Roles</h3>
+    <ul>
+      <li><b>Motor Surveyor</b> – Conducts vehicle inspections and submits surveys</li>
+      <li><b>Reviewer</b> – Reviews survey data and prepares motor insurance reports</li>
+      <li><b>Admin</b> – Manages users, survey formats, and system configurations</li>
+    </ul>
+
+    <h3 class="h3">Tech Stack</h3>
+    <ul>
+      <li>Flutter (Cross-platform mobile application)</li>
+      <li>Laravel (Backend APIs & Integration)</li>
+      <li>MySQL (Centralized data storage)</li>
+      <li>Local Offline Storage (Mobile)</li>
+    </ul>
+
+    <h3 class="h3">My Responsibilities</h3>
+    <ul>
+      <li>Flutter application development and architecture</li>
+      <li>Offline data handling and synchronization logic</li>
+      <li>Damage assessment workflows</li>
+      <li>Backend API integration</li>
+      <li>End-to-end motor survey workflow implementation</li>
+    </ul>
+
+    <h3 class="h3">Impact</h3>
+    <ul>
+      <li>Reliable motor surveys without internet dependency</li>
+      <li>Faster submission and processing of survey reports</li>
+      <li>Reduced errors through standardized inspection formats</li>
+      <li>Improved coordination between field surveyors and office teams</li>
+      <li>Better auditability and data accuracy</li>
+    </ul>
+
+    <h3 class="h3">Conclusion</h3>
+    <p>
+      The Motor Insurance Survey Application streamlined field inspections and reporting for motor
+      insurance claims by enabling offline data capture, reliable synchronization, and consistent
+      survey documentation across all surveyors.
+    </p>
+
+  </section>
+
+</article>
+
+
+
+
+      
+      
+
+      
+      
+      <!--
+        - #RESUME
+      -->
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->   
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
